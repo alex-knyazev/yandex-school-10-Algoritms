@@ -21,11 +21,9 @@ function prepareSubstrings(strings) {
 
 const t0 = performance.now();
 const substrings = prepareSubstrings(allStreets);
-console.log(substrings)
 const t1 = performance.now();
 console.log('time of preparing', t1 - t0, ' milliseconds.');
 
-console.log(Object.keys(substrings).length);
 const input = document.getElementById('streets-input');
 const status = document.getElementById('status');
 const results = document.getElementById('results');
